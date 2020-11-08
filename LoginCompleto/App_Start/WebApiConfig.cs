@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using LoginCompleto.Controllers;
 
 namespace LoginCompleto
 {
@@ -12,6 +10,8 @@ namespace LoginCompleto
             config.EnableCors();
 
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new TokenValidationHandler());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
