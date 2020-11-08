@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.IdentityModel.Tokens;
 
-namespace WebApplication3.Controllers
+namespace LoginCompleto.Controllers
 {
     internal class TokenValidationHandler : DelegatingHandler
     {

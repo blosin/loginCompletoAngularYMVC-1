@@ -4,11 +4,11 @@
     {
         public User(string username, string token)
         {
-            this.Username = username;
-            this.Token = token;
+            this.username = username;
+            this.token = token;
         }
 
-        public string Username { get; set; }
-        public string Token { get; set; }
+        public string username { get; set; }
+        public string token { get; set; }
     }
 }

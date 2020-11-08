@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace LoginCompleto.Controllers
 {
@@ -7,6 +8,7 @@ namespace LoginCompleto.Controllers
     public class DefaultController : ApiController
     {
         // GET: api/Default
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };

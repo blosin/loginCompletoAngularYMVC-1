@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 
-namespace WebApplication3.Controllers
+namespace LoginCompleto.Controllers
 {
     public class TokenGenerator
     {

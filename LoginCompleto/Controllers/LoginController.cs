@@ -2,9 +2,10 @@
 using System.Threading;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using LoginCompleto.Models;
 using WebApplication3.Models;
 
-namespace WebApplication3.Controllers
+namespace LoginCompleto.Controllers
 {
     [AllowAnonymous]
     [RoutePrefix("api/login")]

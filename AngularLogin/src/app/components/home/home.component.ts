@@ -12,7 +12,10 @@ export class HomeComponent implements OnInit {
   constructor(private valuesService: ValuesService) { }
 
   ngOnInit(): void {
-    this.valuesService.getAll().subscribe(v => this.values = v);
+    this.valuesService.getAll().subscribe(v => {
+      console.log(v);
+      this.values = v;
+    });
   }
 
 }

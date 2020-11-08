@@ -1,4 +1,4 @@
-﻿namespace WebApplication3.Models
+﻿namespace LoginCompleto.Models
 {
     public class LoginRequest
     {
