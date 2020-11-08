@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from 'src/app/models/cliente';
 import { ValuesService } from 'src/app/services/values.service';
 
 @Component({
@@ -7,13 +8,12 @@ import { ValuesService } from 'src/app/services/values.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  values: any;
+  values: Cliente[];
 
   constructor(private valuesService: ValuesService) { }
 
   ngOnInit(): void {
     this.valuesService.getAll().subscribe(v => {
-      console.log(v);
       this.values = v;
     });
   }

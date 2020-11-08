@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using LoginCompleto.Models;
 
 namespace LoginCompleto.Controllers
 {
@@ -9,9 +10,12 @@ namespace LoginCompleto.Controllers
     {
         // GET: api/Default
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        public IEnumerable<string> Get()
+        public IEnumerable<Cliente> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<Cliente> lista = new List<Cliente>();
+            lista.Add(new Cliente() {nombre = "pablo", apellido = "marmol"});
+            lista.Add(new Cliente() {nombre = "pedro", apellido = "picapiedras"});
+            return lista;
         }
 
         // GET: api/Default/5

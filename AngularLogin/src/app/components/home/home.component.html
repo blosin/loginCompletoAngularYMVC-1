@@ -1,6 +1,8 @@
 <div>
   <h1>Datos desde la api de MVC</h1>
-  <ul *ngFor="let v of values">
-    <li>{{ v }}</li>
+  <ul>
+    <li *ngFor="let item of values">
+      {{ item.nombre }} {{ item.apellido }}
+    </li>
   </ul>
 </div>
